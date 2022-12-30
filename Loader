@@ -1,0 +1,12 @@
+local gamelist = {
+    [994732206]  = "https://raw.githubusercontent.com/MawinSSR/QuincyHubz/main/bloxfruit",
+    [1451439645] = "https://raw.githubusercontent.com/MawinSSR/QuincyHubz/main/kinglegacy",
+    [2644656496] = "https://raw.githubusercontent.com/MawinSSR/QuincyHubz/main/projectnew",
+}
+local checkgame = gamelist[game.gameId]
+if gamelist[game.gameId] then 
+print (checkgame)
+    loadstring(game:HttpGet(checkgame))()
+else 
+    game.Players.LocalPlayer:Kick("You have been permanently banned.\nควายเอ้ยกูยังไม่ได้ทำ 🤡")
+end
